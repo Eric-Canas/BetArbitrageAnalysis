@@ -17,7 +17,8 @@ class BetScraper():
         self.urls = [BASE_WEB+sport for sport in sports] #Set of pages to check
         shuffle(self.urls)
         self.information = {}
-
+        user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
+        self.header = {'User-Agent' : user_agent}
     def get_information(self, sleep_time_min=0.5, sleep_time_max=1.5):
         """
         Scrap all the information of oddschecker.com/es/ for the sports selected
@@ -31,7 +32,7 @@ class BetScraper():
             # Wait a random time for neither overwhelm the page nor be easily detected.
             sleep(uniform(sleep_time_min, sleep_time_max))
             # Make the request and get the HTML of the page
-            response = get(url=url)
+            response = get(url=url, headers=self.header)
             # If response gets code 200 (ok)
             if response.status_code == codes['ok']:
                 # Gets the name of the sport
