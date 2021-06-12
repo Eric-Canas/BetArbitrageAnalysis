@@ -14,8 +14,9 @@ INCOMPLETE_INFO = 'incomplete info'
 
 # HOUSES
 HOUSE_CODE = {'B3': 'Bet365', 'PS': 'Bet-Stars', 'WA': 'Betway-Sports', 'FS': 'Betfair',
-              'XS': 'Betfair-Exchange', 'EE':'888-Sport', 'LU': 'Luckya', 'UM': 'Sportium',
-              'M1': 'Marathon-Bet', 'MC': 'Marca-Apuestas', 'WH': 'William-Hill', 'WS': 'Bwin'}
+              'XS': 'Betfair-Exchange', 'E8':'888-Sport', 'LU': 'Luckya', 'UM': 'Sportium',
+              'M1': 'Marathon-Bet', 'MC': 'Marca-Apuestas', 'WH': 'William-Hill', 'WS': 'Bwin',
+              'C3' : 'Codere'}
 
 # CLASS CODES OF THE WEB
 PRINCIPAL_COMPETITIONS = '_2D9z5o'
